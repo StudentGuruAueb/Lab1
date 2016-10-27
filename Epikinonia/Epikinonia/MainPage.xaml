@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Epikinonia.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Epikinonia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Name="textBox" FontSize="45" Width="250" Height="100" PlaceholderText="Text here..."/>
+
+        <Button Grid.Row="1" Content="Push" FontSize="45" Click="TextShow" HorizontalAlignment="Center" Name="myButton" Width=" 250" Height="100"/>
+        <TextBlock Name="myText" FontSize="45" VerticalAlignment="Bottom"/>
+    </Grid>
+</Page>
